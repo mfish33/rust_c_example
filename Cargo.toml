@@ -1,0 +1,16 @@
+[package]
+name = "rust_c_example"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "rust_c_example"
+crate-type = ["staticlib"]
+
+[build-dependencies]
+cbindgen = "0.27.0"
+bindgen = "0.70.1"
+
+[dependencies]
+GSL = "7.0.0"
+libc = "0.2.158"
